@@ -1,0 +1,65 @@
+version: "3.1"
+intents:
+- affirm
+- deny
+- greet
+- thankyou
+- goodbye
+- search_concerts
+- search_venues
+- compare_reviews
+- bot_challenge
+- nlu_fallback
+- how_to_get_started
+- add
+- subtraction
+- multiplication
+- division
+- inform_operands
+entities:
+  - operand1
+  - operand2
+  - operation
+slots:
+  operand1:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: operand1
+  operand2:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: operand2
+  operation:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: operation
+responses:
+  utter_greet:
+    - text: "Hello! I am a calculator chatbot. How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day."
+  utter_ask_operand1:
+    - text: "What is the first operand?"
+  utter_ask_operand2:
+    - text: "What is the second operand?"
+  utter_ask_operation:
+    - text: "What mathematical operation do you want to perform? You can choose either addition or subtraction."
+  utter_result:
+    - text: "The result of {operation} of {operand1} and {operand2} is {result}."
+actions:
+  - action_calculate
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_operand1
+  - utter_ask_operand2
+  - utter_ask_operation
+  - utter_result
+  - action_calculate
+  - utter_iamabot
+

@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-operand1",
+      "2": "I-operand1",
+      "3": "L-operand1",
+      "4": "U-operand1",
+      "5": "B-operand2",
+      "6": "I-operand2",
+      "7": "L-operand2",
+      "8": "U-operand2",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-operand1": 1,
+      "I-operand1": 2,
+      "L-operand1": 3,
+      "U-operand1": 4,
+      "B-operand2": 5,
+      "I-operand2": 6,
+      "L-operand2": 7,
+      "U-operand2": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

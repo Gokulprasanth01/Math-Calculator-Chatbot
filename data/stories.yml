@@ -1,0 +1,29 @@
+version: "3.1"
+- story: greet and goodbye
+  steps:
+  - intent: greet
+    - action: utter_greet
+  - intent: goodbye
+    - action: utter_goodbye
+
+- story: perform addition
+  steps:
+  - intent: addition
+  - action: utter_ask_operand1
+  - slot_was_set:
+    - operand1: 3
+  - action: utter_ask_operand2
+  - slot_was_set:
+    - operand2: 5
+  - action: action_calculate
+
+- story: perform subtraction
+  steps:
+  - intent: subtraction
+  - action: utter_ask_operand1
+  - slot_was_set:
+    - operand1: 3
+  - action: utter_ask_operand2
+  - slot_was_set:
+    - operand2: 5
+  - action: action_calculate

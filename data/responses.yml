@@ -1,0 +1,14 @@
+version: "3.1"
+responses:
+  utter_greet:
+    - text: "Hello! I am a calculator chatbot. How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a nice day."
+  utter_ask_operand1:
+    - text: "What is the first operand?"
+  utter_ask_operand2:
+    - text: "What is the second operand?"
+  utter_ask_operation:
+    - text: "What mathematical operation do you want to perform? You can choose either addition or subtraction."
+  utter_result:
+    - text: "The result of {operation} of {operand1} and {operand2} is {result}."

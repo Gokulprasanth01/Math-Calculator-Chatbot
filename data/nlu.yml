@@ -1,0 +1,28 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you
+  - intent: addition
+    examples: |
+      - add
+      - addition
+      - sum
+  - intent: subtraction
+    examples: |
+      - subtract
+      - minus
+      - difference
+  - intent: inform_operands
+    examples: |
+      - {operand1} and {operand2}
+      - {operand2} and {operand1}
+      - {operand1} and {operand2} for {operation}
+      - {operand2} and {operand1} for {operation}
