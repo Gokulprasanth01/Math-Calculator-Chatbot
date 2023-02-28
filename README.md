@@ -9,8 +9,8 @@
 ### Functions
 ### The code includes several functions:
 
-###* 'add(num1, num2)' adds two numbers and returns the result
-###* 'subtract(num1, num2)' subtracts two numbers and returns the result
+### * 'add(num1, num2)' adds two numbers and returns the result
+### * 'subtract(num1, num2)' subtracts two numbers and returns the result
 
 ### *'multiply(num1, num2)' multiplies two numbers and returns the result
 
